@@ -1,0 +1,75 @@
+:root{
+    --body-bg: hsl(218, 23%, 16%);
+    --container-bg: hsl(217, 19%, 24%);
+    --primary:  hsl(150, 100%, 66%);
+    --advice-color: hsl(193, 38%, 86%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--body-bg);
+}
+
+.container{
+    max-width: 450px;
+    border-radius: 10px;
+    background-color: var(--container-bg);
+    padding: 20px 20px 40px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.advice{
+    font-size: 28px;  
+    font-weight: 800;
+    color: var(--advice-color);
+   text-align: center;
+}
+
+strong{
+    font-size: 14px; 
+    font-weight: 800;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.button{
+    background-color: var(--primary);
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.button img{
+    width: 20px;
+    height: 20px;
+}
+
